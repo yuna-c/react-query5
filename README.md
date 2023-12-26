@@ -1,10 +1,11 @@
 # start
 
-git config --global user.name 'yuna'
-git config --global user.email 'yuna744@gmail.com'
+git config --global user.name 'yuna'<br>
+git config --global user.email 'yuna744@gmail.com'<br>
 
-npm i @tanstack/react-query
-npm i @tanstack/react-query-devtools
+npm i @tanstack/react-query<br>
+npm i @tanstack/react-query-devtools<br>
+npm i react-router-dom<br>
 
 # Getting Started with Create React App
 
