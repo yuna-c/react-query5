@@ -15,12 +15,17 @@ isError, isSuccess : 데이터 반환 성공 실패 유무(택1)
 isLoading : pending 유무
 isStale, isFresh : 최신 데이터 유무 (stale: falsed(최신 상태), true(옛날 상태))
 refetch : 비동기 데이터 강제 재 요청 함수 
+
+기본값 5분 
 */
 
 export const useUserQuery = () => {
   return useQuery({
     queryKey: ["user"],
     queryFn: fetchUser,
+    refetchOnWindowFocus: false, // 다른 브라우저 탭으로 이동했다가 다시 넘어오면 재패칭 안함
+    refetchOnMount: false, //해당 컴포넌트 재 마운트시 reftetching 안함
+    catchTime: 1000 * 10,
   });
 };
 /*
