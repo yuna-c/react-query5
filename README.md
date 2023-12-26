@@ -1,3 +1,11 @@
+# start
+
+git config --global user.name 'yuna'
+git config --global user.email 'yuna744@gmail.com'
+
+npm i @tanstack/react-query
+npm i @tanstack/react-query-devtools
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
